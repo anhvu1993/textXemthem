@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MIk-VM-NQY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thuvien-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Thuvien" customModule="DemotextXemthem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cIq-xW-j5M" customClass="ReadMoreTextView" customModule="ReadMoreTextView">
+                                <rect key="frame" x="10" y="90" width="355" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTrim" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumNumberOfLines">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="readMoreText" value="..."/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o1b-Jv-CVX" customClass="ReadMoreTextView" customModule="ReadMoreTextView">
+                                <rect key="frame" x="10" y="40" width="355" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.77956416070000001" blue="0.77495592089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">👨‍👩‍👧‍👦👨‍👩‍👧‍👦👨‍👩‍👧‍👦👨‍👩‍👧‍👦 Lorem http://ipsum.com dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumNumberOfLines">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTrim" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khk-sd-aap">
+                                <rect key="frame" x="301" y="131" width="64" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="xem thêm">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" title="rút ngắn">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showtext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETD-Bx-6I3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o1b-Jv-CVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1Qb-jy-4eU"/>
+                            <constraint firstItem="cIq-xW-j5M" firstAttribute="top" secondItem="o1b-Jv-CVX" secondAttribute="bottom" id="CeW-gV-6bu"/>
+                            <constraint firstItem="o1b-Jv-CVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DJT-m7-HMy"/>
+                            <constraint firstItem="o1b-Jv-CVX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="Gtw-8T-t4Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cIq-xW-j5M" secondAttribute="trailing" constant="10" id="K7f-f2-lqm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="khk-sd-aap" secondAttribute="trailing" constant="10" id="dHQ-4r-BLA"/>
+                            <constraint firstItem="khk-sd-aap" firstAttribute="top" secondItem="cIq-xW-j5M" secondAttribute="bottom" constant="8" id="lRG-rE-ZCT"/>
+                            <constraint firstItem="cIq-xW-j5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rBf-CP-j7Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="readMoreTextView" destination="cIq-xW-j5M" id="Vef-ai-zWg"/>
+                        <outlet property="showtext" destination="khk-sd-aap" id="QaE-0F-697"/>
+                        <outlet property="topReadMoreTextView" destination="o1b-Jv-CVX" id="2Vb-rU-c6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-101"/>
+        </scene>
+        <!--Lambangtay-->
+        <scene sceneID="Igf-vZ-BSv">
+            <objects>
+                <viewController id="MIk-VM-NQY" customClass="Lambangtay" customModule="DemotextXemthem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l0y-i1-ssE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkP-4R-qb9">
+                                <rect key="frame" x="10" y="40" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="yDH-LP-0il"/>
+                                </constraints>
+                                <mutableString key="text">Lorem http://ipsum.com dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-sy-vC2">
+                                <rect key="frame" x="319" y="93" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="MIk-VM-NQY" eventType="touchUpInside" id="gVu-Z3-9Uu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jkP-4R-qb9" firstAttribute="leading" secondItem="Mga-Gt-R3i" secondAttribute="leading" constant="10" id="EEO-mL-bjm"/>
+                            <constraint firstItem="Mga-Gt-R3i" firstAttribute="trailing" secondItem="8nO-sy-vC2" secondAttribute="trailing" constant="10" id="PWf-xn-cO9"/>
+                            <constraint firstItem="jkP-4R-qb9" firstAttribute="top" secondItem="Mga-Gt-R3i" secondAttribute="top" constant="20" id="QLU-6V-C99"/>
+                            <constraint firstItem="Mga-Gt-R3i" firstAttribute="trailing" secondItem="jkP-4R-qb9" secondAttribute="trailing" constant="10" id="bWa-No-nH0"/>
+                            <constraint firstItem="8nO-sy-vC2" firstAttribute="top" secondItem="jkP-4R-qb9" secondAttribute="bottom" constant="8" id="vcM-Sr-hj3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mga-Gt-R3i"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="8nO-sy-vC2" id="F1o-dD-Ood"/>
+                        <outlet property="lblHeight" destination="yDH-LP-0il" id="yxT-f9-jWg"/>
+                        <outlet property="textlabel" destination="jkP-4R-qb9" id="LcB-7x-oNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SK4-00-6BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-101"/>
+        </scene>
+    </scenes>
+</document>
